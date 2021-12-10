@@ -1,0 +1,13 @@
+mutation UploadProfilePicture(
+  $uploadProfilePictureFileType: String!
+  $uploadProfilePictureFileName: String!
+) {
+  uploadProfilePicture(
+    fileType: $uploadProfilePictureFileType
+    fileName: $uploadProfilePictureFileName
+  ) {
+    signedS3Url
+    objectUrl
+    error
+  }
+}

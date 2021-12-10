@@ -1,0 +1,11 @@
+mutation UploadPicture(
+  $fileType: String!
+  $fileName: String!
+  $skillId: String!
+) {
+  uploadPicture(fileType: $fileType, fileName: $fileName, skillId: $skillId) {
+    signedS3Url
+    objectUrl
+    error
+  }
+}

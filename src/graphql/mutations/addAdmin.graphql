@@ -1,0 +1,16 @@
+mutation AddAdmin($options: AdminRegisterInput!) {
+  addAdmin(options: $options) {
+    errors {
+      message
+      field
+    }
+    admin {
+      id
+      firstName
+      lastName
+      username
+      email
+      role
+    }
+  }
+}

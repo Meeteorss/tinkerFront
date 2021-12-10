@@ -1,0 +1,22 @@
+query WorkerById($workerByIdId: String!) {
+  workerById(id: $workerByIdId) {
+    id
+    firstName
+    lastName
+    userName
+    email
+    phone
+    city
+    sexe
+    age
+    skillsIds
+    dateOfBirth
+    description
+    isActive
+    ratingsValue
+    ratingsNumber
+    rating
+    profilePicture
+    createdAt
+  }
+}

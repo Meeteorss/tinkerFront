@@ -1,0 +1,12 @@
+query GetConversation($otherId: String!) {
+  getConversation(otherId: $otherId) {
+    id
+    senderId
+    recieverId
+    sender
+    reciever
+    content
+    state
+    createdAt
+  }
+}

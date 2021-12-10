@@ -1,0 +1,11 @@
+query GetCurrentAdmin {
+  getCurrentAdmin {
+    id
+    firstName
+    lastName
+    username
+    email
+    profilePicture
+    role
+  }
+}

@@ -1,0 +1,18 @@
+query GetSkillByTitle($title: String!, $workerId: String!) {
+  getSkillByTitle(title: $title, workerId: $workerId) {
+    id
+    workerId
+    worker
+    status
+    rating
+    ratingsNumber
+    category
+    title
+    description
+    pricing
+    duration
+    zone
+    pictures
+    workerPicUrl
+  }
+}

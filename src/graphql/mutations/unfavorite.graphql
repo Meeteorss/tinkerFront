@@ -1,0 +1,3 @@
+mutation Unfavorite($workerId: String!) {
+  unfavorite(workerId: $workerId)
+}

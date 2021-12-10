@@ -1,0 +1,12 @@
+query GetConversations {
+  getConversations {
+    user
+    other
+    userId
+    otherId
+    content
+    state
+    createdAt
+    id
+  }
+}

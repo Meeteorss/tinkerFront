@@ -1,0 +1,40 @@
+query WorkerPageQuery($username: String!) {
+  workerPageQuery(username: $username) {
+    worker {
+      id
+      firstName
+      lastName
+      userName
+      email
+      phone
+      city
+      sexe
+      age
+      dateOfBirth
+      description
+      skillsIds
+      isActive
+      ratingsValue
+      ratingsNumber
+      rating
+      profilePicture
+      createdAt
+    }
+    skills {
+      id
+      workerId
+      worker
+      status
+      rating
+      ratingsNumber
+      category
+      title
+      description
+      pricing
+      duration
+      zone
+      pictures
+      workerPicUrl
+    }
+  }
+}

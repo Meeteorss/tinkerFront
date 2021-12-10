@@ -1,0 +1,32 @@
+query SearchSkills(
+  $limit: Int!
+  $skip: Int!
+  $orderBy: String!
+  $keyword: String!
+  $city: String!
+  $category: String!
+) {
+  searchSkills(
+    limit: $limit
+    skip: $skip
+    orderBy: $orderBy
+    keyword: $keyword
+    city: $city
+    category: $category
+  ) {
+    id
+    workerId
+    worker
+    status
+    rating
+    ratingsNumber
+    category
+    title
+    description
+    pricing
+    duration
+    zone
+    pictures
+    workerPicUrl
+  }
+}

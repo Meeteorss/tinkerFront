@@ -1,0 +1,18 @@
+query GetSkills($workerId: String!) {
+  getSkills(workerId: $workerId) {
+    id
+    workerId
+    worker
+    status
+    rating
+    ratingsNumber
+    category
+    title
+    description
+    pricing
+    duration
+    zone
+    pictures
+    workerPicUrl
+  }
+}

@@ -1,0 +1,20 @@
+query GetAllSkills {
+  getAllSkills {
+    id
+    workerId
+    worker
+    rating
+    ratingsNumber
+    pictures
+    workerPicUrl
+    category
+    title
+    description
+    pricing
+    duration
+    zone
+    status
+    likesCount
+    createdAt
+  }
+}

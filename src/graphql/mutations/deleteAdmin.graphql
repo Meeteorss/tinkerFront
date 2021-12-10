@@ -1,0 +1,3 @@
+mutation DeleteAdmin($username: String!) {
+  deleteAdmin(username: $username)
+}

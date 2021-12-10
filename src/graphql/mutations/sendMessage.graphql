@@ -1,0 +1,3 @@
+mutation SendMessage($recieverId: String!, $content: String!) {
+  sendMessage(recieverId: $recieverId, content: $content)
+}

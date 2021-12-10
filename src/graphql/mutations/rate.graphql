@@ -1,0 +1,3 @@
+mutation Rate($rateWorkerId: String!, $rateValue: Int!) {
+  rate(workerId: $rateWorkerId, value: $rateValue)
+}

@@ -1,0 +1,3 @@
+mutation Like($skillId: String!) {
+  like(skillId: $skillId)
+}

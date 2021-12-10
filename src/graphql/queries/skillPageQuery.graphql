@@ -1,0 +1,56 @@
+query SkillPageQuery($username: String!, $title: String!) {
+  skillPageQuery(username: $username, title: $title) {
+    skill {
+      id
+      workerId
+      worker
+      status
+      rating
+      ratingsNumber
+      category
+      title
+      description
+      pricing
+      duration
+      zone
+      pictures
+      workerPicUrl
+    }
+    worker {
+      id
+      firstName
+      lastName
+      userName
+      email
+      phone
+      city
+      sexe
+      age
+      dateOfBirth
+      description
+      skillsIds
+      isActive
+      ratingsValue
+      ratingsNumber
+      rating
+      profilePicture
+      createdAt
+    }
+    otherSkills {
+      id
+      workerId
+      worker
+      status
+      rating
+      ratingsNumber
+      category
+      title
+      description
+      pricing
+      duration
+      zone
+      pictures
+      workerPicUrl
+    }
+  }
+}

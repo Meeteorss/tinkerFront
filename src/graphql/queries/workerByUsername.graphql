@@ -1,0 +1,22 @@
+query WorkerByUsername($username: String!) {
+  workerByUsername(username: $username) {
+    id
+    firstName
+    lastName
+    userName
+    email
+    phone
+    city
+    sexe
+    age
+    dateOfBirth
+    description
+    skillsIds
+    isActive
+    ratingsValue
+    ratingsNumber
+    rating
+    profilePicture
+    createdAt
+  }
+}

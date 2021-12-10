@@ -1,0 +1,20 @@
+mutation RegisterWorker($options: WorkerRegisterInput!) {
+  registerWorker(options: $options) {
+    errors {
+      message
+      field
+    }
+    worker {
+      id
+      firstName
+      lastName
+      email
+      phone
+      city
+      job
+      jobDescription
+      price
+      duration
+    }
+  }
+}

@@ -1,0 +1,19 @@
+query Workers($workersOption: String!) {
+  workers(option: $workersOption) {
+    id
+    firstName
+    lastName
+    email
+    phone
+    city
+    price
+    job
+    jobDescription
+    duration
+    ratingsValue
+    ratingsNumber
+    rating
+    profilePicture
+    isActive
+  }
+}

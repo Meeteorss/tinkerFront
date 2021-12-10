@@ -1,0 +1,8 @@
+query GetLikedSkills {
+  getLikedSkills {
+    id
+    worker
+    title
+    pictures
+  }
+}

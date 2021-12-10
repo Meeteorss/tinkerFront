@@ -1,0 +1,21 @@
+mutation CreateSkillS1($options: CreateSkillS1Input!) {
+  createSkillS1(options: $options) {
+    errors {
+      message
+      field
+    }
+    skill {
+      id
+      workerId
+      status
+      rating
+      category
+      title
+      description
+      pricing
+      duration
+      zone
+      pictures
+    }
+  }
+}

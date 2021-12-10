@@ -1,0 +1,19 @@
+query GetAllWorkers {
+  getAllWorkers {
+    id
+    firstName
+    lastName
+    userName
+    email
+    sexe
+    phone
+    city
+    dateOfBirth
+    description
+    skillsIds
+    rating
+    ratingsNumber
+    profilePicture
+    createdAt
+  }
+}

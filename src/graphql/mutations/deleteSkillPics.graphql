@@ -1,0 +1,3 @@
+mutation DeleteSkillPics($skillId: String!) {
+  deleteSkillPics(skillId: $skillId)
+}

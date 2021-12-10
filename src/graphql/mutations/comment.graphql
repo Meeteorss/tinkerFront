@@ -1,0 +1,3 @@
+mutation Comment($content: String!, $skillId: String!) {
+  comment(content: $content, skillId: $skillId)
+}

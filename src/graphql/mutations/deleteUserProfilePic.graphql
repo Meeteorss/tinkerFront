@@ -1,0 +1,3 @@
+mutation DeleteUserProfilePic($userId: String!) {
+  deleteUserProfilePic(userId: $userId)
+}

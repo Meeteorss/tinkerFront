@@ -1,0 +1,18 @@
+query CommentsBySkill(
+  $title: String!
+  $worker: String!
+  $limit: Int!
+  $skip: Int!
+) {
+  commentsBySkill(title: $title, worker: $worker, limit: $limit, skip: $skip) {
+    id
+    content
+    author
+    worker
+    userId
+    skillId
+    workerId
+    createdAt
+    updatedAt
+  }
+}

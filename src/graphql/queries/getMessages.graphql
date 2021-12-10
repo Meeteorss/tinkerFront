@@ -1,0 +1,12 @@
+query GetMessages {
+  getMessages {
+    id
+    senderId
+    recieverId
+    sender
+    reciever
+    content
+    state
+    createdAt
+  }
+}

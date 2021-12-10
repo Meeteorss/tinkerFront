@@ -1,0 +1,28 @@
+query NavbarQuery {
+  navbarQuery {
+    user {
+      id
+      firstName
+      lastName
+      userName
+      email
+      isWorker
+      profilePicture
+      confirmed
+      likesIds
+    }
+    likes {
+      id
+      title
+      worker
+      pictures
+    }
+    favs {
+      id
+      userName
+      profilePicture
+      rating
+      ratingsNumber
+    }
+  }
+}

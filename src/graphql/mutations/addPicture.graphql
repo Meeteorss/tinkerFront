@@ -1,0 +1,3 @@
+mutation AddPicture($pictureUrl: String!, $index: Int!, $skillId: String!) {
+  addPicture(pictureUrl: $pictureUrl, index: $index, skillId: $skillId)
+}
