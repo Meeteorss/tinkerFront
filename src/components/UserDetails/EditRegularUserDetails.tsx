@@ -1,43 +1,23 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Text,
-  Stack,
-  Link,
-  FormErrorMessage,
-} from "@chakra-ui/react";
-import { Formik, Form, Field as FormikField } from "formik";
+import { Box, Button, Flex, Text, Stack, Link } from "@chakra-ui/react";
+import { Formik, Form } from "formik";
 import { useRouter } from "next/router";
 import * as React from "react";
 import { useRef, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
-import {
-  useUploadProfilePictureMutation,
-  useAddProfilePictureMutation,
-  useUpdateWorkerMutation,
-} from "../../generated/graphql";
+import { useUpdateWorkerMutation } from "../../generated/graphql";
 import { Card } from "./Card";
 import { CardContent } from "./CardContent";
 import { CardHeader } from "./CardHeader";
-import { EditField } from "./EditField";
 import { Field } from "./Field";
 import { CheckIcon } from "@chakra-ui/icons";
-import { toErrorMap } from "../../utils/toErrorMap";
 import { UploadField } from "../Fields/UploadField";
-import SelectField from "../Fields/SelectField";
-import { cityOptions } from "../Fields/newSearchField";
 import {
-  dayOptions,
-  monthOptions,
-  yearOptions,
   _28dayOptions,
   _29dayOptions,
   _30dayOptions,
   _31dayOptions,
 } from "../../utils/selectOptions";
-import { formatMonthOrDay } from "../../utils/formatTime";
 // import validateDate from "validate-date";
 const validateDate = require("validate-date");
 

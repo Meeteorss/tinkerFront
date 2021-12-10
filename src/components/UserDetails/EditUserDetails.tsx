@@ -3,11 +3,8 @@ import {
   Button,
   Flex,
   Text,
-  Stack,
   Link,
   FormErrorMessage,
-  Input,
-  Select,
 } from "@chakra-ui/react";
 import { Formik, Form, Field as FormikField } from "formik";
 import { useRouter } from "next/router";
@@ -15,24 +12,17 @@ import * as React from "react";
 import { useRef, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
-import {
-  useUploadProfilePictureMutation,
-  useAddProfilePictureMutation,
-  useUpdateWorkerMutation,
-} from "../../generated/graphql";
+import { useUpdateWorkerMutation } from "../../generated/graphql";
 import { Card } from "./Card";
 import { CardContent } from "./CardContent";
 import { CardHeader } from "./CardHeader";
 import { EditField } from "./EditField";
 import { Field } from "./Field";
-import { CheckIcon, DeleteIcon } from "@chakra-ui/icons";
+import { CheckIcon } from "@chakra-ui/icons";
 import { toErrorMap } from "../../utils/toErrorMap";
 import { UploadField } from "../Fields/UploadField";
-import { PicturesField } from "../Fields/PicturesField";
 import SelectField from "../Fields/SelectField";
-import InputField from "../Fields/InputField";
 
-import { durationOptions } from "../../pages/worker/register";
 import {
   cityOptions,
   dayOptions,

@@ -11,7 +11,7 @@ import {
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { FaRegThumbsUp, FaThumbsUp } from "react-icons/fa";
-import { MdFavorite, MdFavoriteBorder } from "react-icons/Md";
+import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import {
   useDislikeMutation,
   useFavoriteMutation,
