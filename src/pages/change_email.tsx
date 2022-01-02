@@ -52,6 +52,9 @@ const change_email = () => {
   if (!data) {
     return <Box>no data</Box>;
   }
+  if (!dataMe || !dataMe.me) {
+    return <Box>no data</Box>;
+  }
 
   return (
     <Layout>
@@ -60,7 +63,11 @@ const change_email = () => {
       </Head>
       <Box py="12">
         <Flex bg="white" mx={"auto"} w={{ base: "100%", xl: 1200 }}>
-          <SideBar src={newImgSrc} worker={data.workerById} action={action} />
+          <SideBar
+            src={newImgSrc}
+            worker={dataMe?.me?.isWorker ? data.workerById : dataMe?.me}
+            action={action}
+          />
           <Card w={{ base: "100%", xl: 1000 }}>
             <CardHeader
               title="Changer mon email"

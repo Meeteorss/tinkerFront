@@ -372,7 +372,7 @@ const Navbar2 = () => {
               bg: "gray.100",
             }}
           >
-            Link 2
+            Paramètres
           </MenuItem>
           <MenuDivider />
           <MenuItem
